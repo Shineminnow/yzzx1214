@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* CSS Document */
+#index {
+	background:url(images/bg.jpg) fixed;
+}
+#dairy {
+	background:url(images/bg2.jpg) fixed;
+}
+#photograph {
+	background:url(images/bg.jpg) fixed;
+}
+#work {
+	background:url(images/bg2.jpg) fixed;
+}
+#fun {
+	background:url(images/bg.jpg) fixed;
+}
+#tool {
+	background:url(images/bg.jpg) fixed;
+}
+#about {
+	background:url(images/bg2.jpg) fixed;
+}
+img {
+	border:none;
+}
+a {
+    -webkit-transition: color 400ms;
+}
+a:link {
+	text-decoration: none;
+	color:#000;
+}
+a:visited {
+	text-decoration: none;
+	color:#000;
+}
+a:hover {
+	text-decoration: none;
+	color:#5191C2;
+}
+a:active {
+	text-decoration: none;
+	color:#5191C2;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family:Arial, SimHei, sans-serif;
+}
+.container {
+	min-height:100%;
+}
+#sidebar {}
+#main {}
+.sidebar {
+	position:fixed;
+	width:250px;
+	min-height:100%;
+	top:0px;
+	right:100%;
+}
+.sidebar a:link {
+	text-decoration: none;
+	color:#373737;
+}
+.sidebar a:visited {
+	text-decoration: none;
+	color:#373737;
+}
+.sidebar a:hover {
+	text-decoration: none;
+	color:#5191C2;
+}
+.sidebar a:active {
+	text-decoration: none;
+	color:#5191C2;
+}
+.header {
+	text-align:center;
+	padding-top:20px;
+}
+.header h1 {
+	font-size:36px;
+}
+.header a {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 55px;
+	text-decoration: none;
+	font-family: Arial, SimHei, sans-serif;
+}
+.navigation {
+	padding-top:20px;
+	padding-left:40px;
+	padding-right:40px;
+	padding-bottom:20px;
+}
+.navigation ul {
+	list-style:none;
+	font-family:Arial, SimHei, sans-serif;
+	font-size:16px;
+}
+.line {
+	padding-left:30px;
+	padding-right:30px;
+}
+.weibo {
+	text-align:center;
+}
+.weibo p {
+	font-family:Arial, SimHei, sans-serif;
+	font-size:16px;
+}
+.main {
+	position:absolute;
+	top:100%;
+	left:270px;
+	right:40px;
+}
+.board {
+	min-width:600px;
+}
+.whole {
+	box-shadow:0 2px 22px rgba(150,150,150,0.5);
+	border-radius:4px;
+	/*background-color:#FFF;*/
+	background:url(images/transparentbg.png) fixed;
+	padding-left:40px;
+	padding-right:40px;
+	padding-top:40px;
+	margin-bottom:140px;
+}
+.title h2 {
+	font-size:24px;
+}
+.title h3 {
+	text-align:center;
+	font-size:22px;
+}
+.body {
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:40px;
+}
+.body h3 {
+	font-size:20px;
+}
+.body p {
+	font-size:16px;
+}
+#text {
+	text-indent:32px;
+}
+.titleline {
+	width:200px;
+	margin-left:0px;
+}
+#date {
+	font-size:10px;
+	text-indent:0px;
+}
+#author {
+	font-size:14px;
+	text-indent:0px;
+}
+#flash {
+	text-align:center;
+}
+.bottom {
+	font-size:16px;
+	padding-bottom:20px;
+}
+.friends {
+	color: #666;
+	font-size: 14px;
+	text-align: center;
+	padding-bottom:5px;
+}
+.footer {
+	margin-bottom:30px;
+	color: #666;
+	font-size: 12px;
+	text-align: center;
+}

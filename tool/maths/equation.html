@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>工具 － 解方程</title>
+<link rel="stylesheet" type="text/css" href="../../style.css">
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="../../nav.js"></script>
+<script src="../../main.js"></script>
+<script src="equation.js"></script>
+<style>
+.Numberinput {
+	width:25px;
+}
+</style>
+</head>
+
+<body id="tool">
+
+ <div class="container">
+  <div class="sidebar" id="sidebar">
+   <div class="header">
+    <h1><a href="http://yzzx1214.svfree.net/index.html">高一14班</a></h1>
+   </div>
+   <div class="navigation">
+    <nav role="navigation">
+     <ul>
+      <li><a href="http://yzzx1214.svfree.net/index.html">首页</a></li><br>
+      <li><a href="http://yzzx1214.svfree.net/dairy/dairy.html">日志</a></li><br>
+      <li><a href="http://yzzx1214.svfree.net/photograph/photograph.html">相册</a></li><br>
+      <li><a href="http://yzzx1214.svfree.net/work/work.html">作品</a></li><br>
+      <li><a href="http://yzzx1214.svfree.net/tool/tool.html">工具</a></li><br>
+      <li><a href="http://yzzx1214.svfree.net/fun/fun.html">趣玩</a></li><br>
+      <li><a href="http://yzzx1214.svfree.net/about.html">关于我们</a></li>
+     </ul>
+    </nav>
+   </div>
+   <div class="line">
+    <hr>
+   </div>
+   <div class="weibo">
+    <p><a href="http://weibo.com/yzzx1214" target="_blank">官方新浪微博</a></p>
+   </div>
+  </div>
+  <div class="main" id="main">
+   <div class="board">
+    <article class="whole">
+     <div class="title">
+      <h3>解方程</h3>
+     </div>
+     <hr>
+     <div class="body">
+      <div>
+       <form id="linearEquation">
+        <p><label>一元一次方程：</label></p>
+        <p><input type="text" id="linearA" class="Numberinput"/> x + <input type="text" id="linearB" class="Numberinput"/> = <input type="text" id="linearC" class="Numberinput"/> <input type="button" value="确定" onClick="linearEquation()"><input type="reset" value="清空"></p>
+        <p>x = <input type="text" id="linearX" class="Numberinput"/></p>
+       </form>
+      </div>
+      <hr>
+      <div>
+       <form id="quadraticEquation">
+        <p><label>一元二次方程：</label></p>
+        <p><input type="text" id="quadraticA" class="Numberinput"/> x<sup>2</sup> + <input type="text" id="quadraticB" class="Numberinput"/> x + <input type="text" id="quadraticC" class="Numberinput"/> = 0 <input type="button" value="确定" onClick="quadraticEquation()"><input type="reset" value="清空"></p>
+        <p>x<sub>1</sub> = <input type="text" id="quadraticX1" class="Numberinput"/> x<sub>2</sub> = <input type="text" id="quadraticX2" class="Numberinput"/></p>
+       </form>
+      </div>
+      <hr>
+      <div>
+       <form id="twounknownsEquation">
+        <p><label>二元一次方程：</label></p>
+        <p><input type="text" id="twounknownsA1" class="Numberinput"/> x + <input type="text" id="twounknownsB1" class="Numberinput"/> y = <input type="text" id="twounknownsC1" class="Numberinput"/> <input type="button" value="确定" onClick="twounknownsEquation()"><input type="reset" value="清空"></p>
+        <p><input type="text" id="twounknownsA2" class="Numberinput"/> x + <input type="text" id="twounknownsB2" class="Numberinput"/> y = <input type="text" id="twounknownsC2" class="Numberinput"/></p>
+        <p>x = <input type="text" id="twounknownsX" class="Numberinput"/> y = <input type="text" id="twounknownsY" class="Numberinput"/></p>
+       </form>
+      </div>
+      <hr>
+      <div>
+       <p><a href="http://pan.baidu.com/share/link?shareid=354811&uk=2148527409" target="_blank">点击这里下载数学小工具（3月31日更新）</a></p>
+      </div>
+      <hr>
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_b" style="line-height: 12px; ">
+<img src="http://bdimg.share.baidu.com/static/images/type-button-1.jpg?cdnversion=20120831" />
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=1399372" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+     </div>
+    </article>
+    <div class="friends">
+    友情链接：<a href="http://www.njyzzx.com" target="_blank">扬子中学官网</a> <a href="http://tieba.baidu.com/f?kw=%D1%EF%D7%D3%B6%FE%D6%D0" target="_blank">扬子二中吧</a>
+    </div>
+    <hr>
+    <footer>
+     <div class="footer">
+      <p>Powered by yzzx1214</p>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </div>
+ 
+<script type="text/javascript">
+
+window.onload=appear('sidebar', {left:0});
+window.onload=move('main', {top:40});
+
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb37c1d43e03051facc46822c03e019e7' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+
+</html>
